@@ -1,0 +1,8 @@
+.env
+__pycache__/
+.DS_Store
+.crewai/
+.venv/
+output/
+*.db
+.pytest_cache/

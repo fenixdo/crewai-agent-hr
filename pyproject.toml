@@ -1,0 +1,29 @@
+[project]
+name = "crewai_agent_hr"
+version = "0.1.0"
+description = "HR agent: kế hoạch nhân sự (tuyển, đào tạo, chi phí) cho chiến dịch (CrewAI crew + A2A server)"
+authors = [{ name = "fenixdo", email = "fenix@torilab.ai" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[a2a]==1.15.27",
+    "pyyaml>=6",
+]
+
+[project.scripts]
+crewai_agent_hr = "crewai_agent_hr.main:run"
+run_crew = "crewai_agent_hr.main:run"
+train = "crewai_agent_hr.main:train"
+replay = "crewai_agent_hr.main:replay"
+test = "crewai_agent_hr.main:test"
+run_with_trigger = "crewai_agent_hr.main:run_with_trigger"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
+project_id = "baf7c62c-0697-408e-bbb6-285a0a4cebe0"

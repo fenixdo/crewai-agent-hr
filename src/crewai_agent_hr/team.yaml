@@ -1,0 +1,9 @@
+# Dữ liệu nhân sự đội bán hàng (giả lập).
+current_sales_reps: 3
+max_hires_per_quarter: 3
+recruit_cost_per_hire: 15000000
+training_cost_per_hire: 6000000
+monthly_salary: 18000000
+salary_months_in_quarter: 2      # người mới vào làm từ tháng thứ 2 của quý
+weeks_to_hire: 6
+weeks_training: 2

@@ -1,0 +1,11 @@
+staffing_task:
+  description: >
+    Sale dự báo cần nhân lực như sau cho chiến dịch. Lập kế hoạch nhân sự bằng tool staffing_plan.
+
+    ```json
+    {forecast}
+    ```
+  expected_output: >
+    JSON: hire_plan, training_plan, current_sales_reps, needed, gap, hires, cost_items, cost, timeline_weeks,
+    open_questions.
+  agent: hr_lead
